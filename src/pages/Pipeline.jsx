@@ -1,15 +1,10 @@
 import {
   Box,
   Button,
-  Divider,
   FormControl,
   Input,
   InputAdornment,
-  InputLabel,
-  MenuItem,
   NativeSelect,
-  Select,
-  TextField,
   Typography,
 } from "@mui/material";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
@@ -65,7 +60,6 @@ export default function Pipeline() {
 
                   p: "7px",
                   bgcolor: "primary.text",
-                  bgcolor: "white",
                   borderRadius: "8px",
                 }}
               />
@@ -90,7 +84,10 @@ export default function Pipeline() {
           overflow="auto"
           display="flex"
           gap="1rem"
+          p="1rem"
         >
+          <Column />
+          <Column />
           <Column />
         </Box>
       </Box>
